@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="weather-app">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <i class="fa-solid fa-cloud-sun"></i>
+        <span>Weather<span class="logo-highlight">Now</span></span>
+      </div>
+    </header>
+
+    <!-- Search -->
+    <section class="search-section">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="input-box" type="text" placeholder="Search city..." />
+        <button onclick="searchCity()">Search</button>
+      </div>
+    </section>
+
+    <!-- Main Weather -->
+    <main>
+      <section class="weather-card">
+        <div class="weather-top">
+          <div>
+            <p class="weather-label">CURRENT WEATHER</p>
+            <h1>Karachi</h1>
+            <p class="date">Thursday, September 3, 2026</p>
+          </div>
+
+          <div class="weather-icon">
+            <i class="fa-solid fa-cloud-sun"></i>
+          </div>
+        </div>
+
+        <div class="temperature-area">
+          <div class="temperature">28<span>°C</span></div>
+
+          <div class="weather-description">
+            <h2>Partly Cloudy</h2>
+            <p>Feels like 31°C</p>
+          </div>
+        </div>
+
+        <!-- Weather Details -->
+        <div class="weather-details">
+          <div class="detail">
+            <div class="detail-icon">
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+
+            <div>
+              <span>Humidity</span>
+              <strong>72%</strong>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail-icon">
+              <i class="fa-solid fa-wind"></i>
+            </div>
+
+            <div>
+              <span>Wind</span>
+              <strong>14 km/h</strong>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail-icon">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+
+            <div>
+              <span>Visibility</span>
+              <strong>8 km</strong>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="detail-icon">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+
+            <div>
+              <span>Pressure</span>
+              <strong>1012 hPa</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
